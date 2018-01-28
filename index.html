@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Levis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/materialdesignicons.min.css.map" media="all" type="text/css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+</head>
+<body>
+    <div class="navigation">
+         <div class="logo">
+             <a>
+                <div class="back-containerForLogo"></div>
+             </a>
+         </div>
+        <div class="menu">
+            <a href="index.html" data-hover="ГЛАВНАЯ">ГЛАВНАЯ</a>
+            <a id="his" href="#history" data-hover="ИСТОРИЯ">О НАС</a>
+            <a href="#exemplars" data-hover="МОДЕЛИ">МОДЕЛИ</a>
+            <a href="#delivery" data-hover="ДОСТАВКА">ДОСТАВКА</a>
+            <a href="#reviews" data-hover="ОТЗЫВЫ">ОТЗЫВЫ</a>
+            <a href="#footer" data-hover="КОНТАКТЫ">КОНТАКТЫ</a>
+            <div class="row menuForAdaptive" id="menuForAdaptive">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button onclick="hiddenMenu(1)" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi md-before mdi-menu" id="md-before"></i></button>
+                            <button onclick="hiddenMenu(2)" type="button" class="butAfter btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi md-after mdi-close" id="md-after"></i></button>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li onclick="hiddenMenu(0)"><a href="index.html">ГЛАВНАЯ</a></li>
+                                <li onclick="hiddenMenu(0)"><a href="#history">О НАС</a></li>
+                                <li onclick="hiddenMenu(0)"><a id="mod" href="#exemplars">МОДЕЛИ</a></li>
+                                <li onclick="hiddenMenu(0)"><a href="#delivery">ДОСТАВКА</a></li>
+                                <li onclick="hiddenMenu(0)"><a id="otz" href="#reviews">ОТЗЫВЫ</a></li>
+                                <li onclick="hiddenMenu(0)"><a href="#footer">КОНТАКТЫ</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                        <!--<input type="text" class="form-control" aria-label="...">-->
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div>
+        </div>
+    </div>
+    <div class="hero" id="hero">
+        <div class="back-containerForHero">
+            <div class="container">
+                <div class="titleForHero">
+                    <div class="logoForHero">
+                        <div class="back-containerForLogoOfHero"></div>
+                    </div>
+                    <p>Классика современности<br> в каждой модели</p>
+                    <span>
+                        <a href="#exemplars">ПЕРЕЙТИ</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="containerForImgOfBlockForTimer">
+            <div class="back-containerForImgOfBlockForTimer">
+                <div class="container">
+                    <div class="titleOfContents">
+                        <div class="back-containerForTitle">
+                            <h2>ВНИМАНИЕ!</h2>
+                        </div>
+                    </div>
+                    <div class="descriptionForTimer">
+                        <p class="onlyNow">Только сейчас мы проводим акцию, которая позволит<br> Вам приобрести данные модели по самой выгодной цене!</p>
+                        <div class="containerForPrice">
+                            <p class="oldPrice">4000грн.</p>
+                            <p class="newPrice">1990грн.</p>
+                        </div>
+                        <p class="endTimer">Осталось времени до конца акции:</p>
+                        <div class="time">
+                            <ul class="time">
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                            </ul>
+                        </div>
+                        <ul class="time-name">
+                            <li>дней</li>
+                            <li>часов</li>
+                            <li>минут</li>
+                            <li>секунд</li>
+                        </ul>
+                        <span>
+                        <a href="#exemplars">ВЫБРАТЬ МОДЕЛЬ</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="history" id="history">
+        <div class="back-containerForHistory">
+            <div class="container">
+                <div class="blockForTitleOfContents">
+                    <div class="titleOfContents">
+                        <div class="back-containerForTitle">
+                            <h2>О НАС</h2>
+                        </div>
+                    </div>
+                    <p>В нашем магазине Вы можете приобрести зимнюю обувь по разумной цене. Ботинки и сапоги идеально сочетаются с одеждой повседневного стиля. Продукция Levi's предназначена для уверенных в себе людей, которые в первую очередь ценят качество, стиль и комфорт. Производство обуви – одно из основных направлений производительности Levi's. Бренд с характером неподвластен времени, история бренда прошла многочисленные препятствия, но тем не менее Levi's до сих пор является лидером среди производителей джинсовой одежды и обуви.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exemplars" id="exemplars">
+        <div class="container">
+            <div class="titleOfContents">
+                <div class="back-containerForTitle">
+                    <h2>МОДЕЛИ</h2>
+                </div>
+            </div>
+            <div class="containerForCards">
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX BLACK</h2>
+                        <i onclick="showContainerForPopUp(1)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar" id="photoOfExemplar1">
+                        <div class="img1 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks1">
+                            <div class="wrap" id="wrap1">
+                                <div id="card1">
+                                    <div id="infoOfExemplars1" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX BLACK</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">зима</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внешней отделки: </p>
+                                                <p class="whatFor">натуральная кожа яка</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внутренней отделки: </p>
+                                                <p class="whatFor">натуральный мех</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">терморезина</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Цвет: </p>
+                                                <p class="whatFor">черный</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Размеры: </p>
+                                                <p class="whatFor">40,41,42,43,44,45</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span id="span1" onclick="showBack1(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_first" id="name_first1" required>
+                                            </div>
+                                            <div class="form-group form-group1">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone1" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="size" id="size1" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(1)" id="buttonForMobVersion1" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX BROWN</h2>
+                        <i onclick="showContainerForPopUp(2)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar" id="photoOfExemplar2">
+                        <div class="img2 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks2">
+                            <div class="wrap" id="wrap2">
+                                <div id="card2">
+                                    <div id="infoOfExemplars2" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX BROWN</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">зима</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внешней отделки: </p>
+                                                <p class="whatFor">натуральная кожа яка</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внутренней отделки: </p>
+                                                <p class="whatFor">натуральный мех</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">терморезина</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Цвет: </p>
+                                                <p class="whatFor">коричневый</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Размеры: </p>
+                                                <p class="whatFor">40,41,42,43,44,45</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span onclick="showBack2(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_first" id="name_first2" required>
+                                            </div>
+                                            <div class="form-group form-group2">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone2" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="size" id="size2" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(2)" id="buttonForMobVersion2" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX B. LIGHT</h2>
+                        <i onclick="showContainerForPopUp(3)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar">
+                        <div class="img3 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks3">
+                            <div class="wrap" id="wrap3">
+                                <div id="card3">
+                                    <div id="infoOfExemplars3" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX B. LIGHT</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">зима</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внешней отделки: </p>
+                                                <p class="whatFor">натуральная кожа яка</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внутренней отделки: </p>
+                                                <p class="whatFor">натуральный мех</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">терморезина</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Цвет: </p>
+                                                <p class="whatFor">коричневый</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Размеры: </p>
+                                                <p class="whatFor">40,41,42,43,44,45</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span onclick="showBack3(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_first" id="name_first4" required>
+                                            </div>
+                                            <div class="form-group form-group3">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone4" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="size" id="size4" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(3)" id="buttonForMobVersion3" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX L. BUFF</h2>
+                        <i onclick="showContainerForPopUp(4)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar">
+                        <div class="img4 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks4">
+                            <div class="wrap" id="wrap4">
+                                <div id="card4">
+                                    <div id="infoOfExemplars4" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX L. BUFF</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">зима</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внешней отделки: </p>
+                                                <p class="whatFor">натуральная кожа яка</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внутренней отделки: </p>
+                                                <p class="whatFor">натуральный мех</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">терморезина</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Цвет: </p>
+                                                <p class="whatFor">черный</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Размеры: </p>
+                                                <p class="whatFor">40,41,42,43,44,45</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span onclick="showBack4(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_first" id="name_first5" required>
+                                            </div>
+                                            <div class="form-group form-group4">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone5" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="size" id="size5" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(4)" id="buttonForMobVersion4" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX BULL</h2>
+                        <i onclick="showContainerForPopUp(5)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar">
+                        <div class="img5 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks5">
+                            <div class="wrap" id="wrap5">
+                                <div id="card5">
+                                    <div id="infoOfExemplars5" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX BULL</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">зима</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внешней отделки: </p>
+                                                <p class="whatFor">натуральная кожа яка</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал<br> внутренней отделки: </p>
+                                                <p class="whatFor">натуральный мех (овчина)</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">терморезина</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Цвет: </p>
+                                                <p class="whatFor">коричневый</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Размеры: </p>
+                                                <p class="whatFor">40,41,42,43,44,45</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span onclick="showBack5(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_first" id="name_first6" required>
+                                            </div>
+                                            <div class="form-group form-group5">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone6" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="size" id="size6" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(5)" id="buttonForMobVersion5" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX L. BLACK</h2>
+                        <i onclick="showContainerForPopUp(6)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar">
+                        <div class="img6 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks6">
+                            <div class="wrap" id="wrap6">
+                                <div id="card6">
+                                    <div id="infoOfExemplars6" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX L. BLACK</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">осень</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Стиль: </p>
+                                                <p class="whatFor">повседневный</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал </p>
+                                                <p class="whatFor"> натуральная кожа</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">полиуретан</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span onclick="showBack6(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_first" id="name_first7" required>
+                                            </div>
+                                            <div class="form-group form-group6">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone7" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="size" id="size7" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(6)" id="buttonForMobVersion6" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX BULL</h2>
+                        <i onclick="showContainerForPopUp(7)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar">
+                        <div class="img7 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks7">
+                            <div class="wrap" id="wrap7">
+                                <div id="card7">
+                                    <div id="infoOfExemplars7" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX BULL</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">осень</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Стиль: </p>
+                                                <p class="whatFor">повседневный</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал: </p>
+                                                <p class="whatFor">натуральная кожа</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">полиуретан</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span onclick="showBack7(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_first" id="name_first8" required>
+                                            </div>
+                                            <div class="form-group form-group7">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="phone8" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="size" id="size8" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(7)" id="buttonForMobVersion7" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+                <div class="cardOfExemplars">
+                    <div class="titleForCards">
+                        <h2>LEVI'S LEATHER JAX L. BROWN</h2>
+                        <i onclick="showContainerForPopUp(8)" class="mdi mdi-magnify"></i>
+                    </div>
+                    <div class="photoOfExemplar">
+                        <div class="img8 back-containerForPhotoOfOfExemplar">
+
+                        </div>
+                        <div class="containerForRotateBlocks" id="containerForRotateBlocks8">
+                            <div class="wrap" id="wrap8">
+                                <div id="card8">
+                                    <div id="infoOfExemplars8" class="containerForRotate infoOfExemplars back">
+                                        <div class="containerForInfoOfExemplars">
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Бренд: </p>
+                                                <p class="whatFor">LEVI'S</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Модель: </p>
+                                                <p class="whatFor">LEVI'S LEATHER JAX L. BROWN</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Сезон: </p>
+                                                <p class="whatFor">осень</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Стиль: </p>
+                                                <p class="whatFor">повседневный</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Материал: </p>
+                                                <p class="whatFor">натуральная кожа</p>
+                                            </div>
+                                            <div class="paragraphOfInfo">
+                                                <p class="paragraph">Подошва: </p>
+                                                <p class="whatFor">полиуретан</p>
+                                            </div>
+                                            <div class="priceForBlockOfInfo">
+                                                <p class="oldPrice">4000 грн.</p>
+                                                <p class="newPrice">1990 грн.</p>
+                                            </div>
+                                            <span onclick="showBack8(1)"><a>ЗАКАЗАТЬ</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="containerForRotate front">
+                                        <form class="order-form" action="" method="POST" accepted-charset="utf-8">
+                                            <!--<input type="hidden" name="country" value="name="country" ">-->
+                                            <!--<input type="hidden" name="key" value="key">-->
+                                            <div class="form-group">
+                                                <!--<label for="name_last" class="control-label">Имя:</label>-->
+                                                <input type="text" class="form-control" placeholder="Имя" name="name_last" id="name_last" required>
+                                            </div>
+                                            <div class="form-group form-group8">
+                                                <!--<label for="name_first" class="control-label">Телефон:</label>-->
+                                                <input type="text" class="form-control" placeholder="Телефон" name="phone" id="name_first" required>
+                                            </div>
+                                            <!--<div class="form-group">-->
+                                                <!--&lt;!&ndash;<label for="phone" class="control-label">Размер:</label>&ndash;&gt;-->
+                                                <!--<input type="text" class="form-control" placeholder="Размер" name="phone" id="phone" required>-->
+                                            <!--</div>-->
+                                            <div class="form-group button">
+                                                <button type="submit" name="submit">ОФОРМИТЬ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span onclick="showContainerForRotateBlocks(8)" id="buttonForMobVersion8" class="buttonForMobVersion">
+                        <a>О МОДЕЛЕ</a>
+                    </span>
+                </div>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp1">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp1"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp2"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp3"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp4"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp5"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp6"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp7"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp8"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp9"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp10"></div>
+                        </div>
+                    </li> <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp11"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp2">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp2_1"></div>
+                        </div>
+                    </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_2"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_3"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_4"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_5"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_6"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_7"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_8"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_9"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_10"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp2_11"></div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp3">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp3_1"></div>
+                        </div>
+                    </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_2"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_3"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_4"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_5"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_6"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_7"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_8"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_9"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_10"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_11"></div>
+                    </div>
+                </li><li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_12"></div>
+                    </div>
+                </li><li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_13"></div>
+                    </div>
+                </li><li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_14"></div>
+                    </div>
+                </li><li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_15"></div>
+                    </div>
+                </li><li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp3_16"></div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp4">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp4_1"></div>
+                        </div>
+                    </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_2"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_3"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_4"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_5"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_6"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_7"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_8"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_9"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp4_10"></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp5">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp5_1"></div>
+                        </div>
+                    </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_2"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_3"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_4"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_5"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_6"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_7"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_8"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp5_9"></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp6">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp6_1"></div>
+                        </div>
+                    </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_2"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_3"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_4"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_5"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_6"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_7"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_8"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_9"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_10"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp6_11"></div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp7">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp7_1"></div>
+                        </div>
+                    </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp7_2"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp7_3"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp7_4"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp7_5"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp7_6"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp7_7"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp7_8"></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="containerForPopUp" id="containerForPopUp8">
+                <i onclick="showContainerForPopUp(0)" class="bottomI mdi mdi-close"></i>
+                <div class="titleForContainerForPopUp">
+                    <p></p>
+                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="containerForImgOfPopUp">
+                            <div class="back-containerForImgOfPopUp8_1"></div>
+                        </div>
+                    </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp8_2"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp8_3"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp8_4"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp8_5"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp8_6"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp8_7"></div>
+                    </div>
+                </li> <li>
+                    <div class="containerForImgOfPopUp">
+                        <div class="back-containerForImgOfPopUp8_8"></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="containerForImgOfBlockForTimer">
+            <div class="back-containerForImgOfBlockForTimer">
+                <div class="container">
+                    <div class="titleOfContents">
+                        <div class="back-containerForTitle">
+                            <h2>ВНИМАНИЕ!</h2>
+                        </div>
+                    </div>
+                    <div class="descriptionForTimer">
+                        <p class="onlyNow">Только сейчас мы проводим акцию, которая позволит<br> Вам приобрести данные модели по самой выгодной цене!</p>
+                        <div class="containerForPrice">
+                            <p class="oldPrice">4000грн.</p>
+                            <p class="newPrice">1990грн.</p>
+                        </div>
+                        <p class="endTimer">Осталось времени до конца акции:</p>
+                        <div class="time">
+                            <ul class="time">
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                            </ul>
+                        </div>
+                        <ul class="time-name">
+                            <li>дней</li>
+                            <li>часов</li>
+                            <li>минут</li>
+                            <li>секунд</li>
+                        </ul>
+                        <span>
+                        <a href="#exemplars">ВЫБРАТЬ МОДЕЛЬ</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery" id="delivery">
+        <div class="container">
+            <div class="titleOfContents">
+                <div class="back-containerForTitle">
+                    <h2>ДОСТАВКА</h2>
+                </div>
+            </div>
+            <div class="titleForDelivery">
+                <p>Как происходит оформление заказа<br> и доставка товара в нашем магазине?</p>
+            </div>
+            <div class="containerForDelivery">
+                <figure>
+                    <div class="containerForImgOfDelivery">
+                        <div class="imgOfDelivery">
+                            <div class="back-containerForImgOfDelivery first">
+
+                            </div>
+                        </div>
+                    </div>
+                    <p>Заполняете очень простую форму</p>
+                </figure>
+                <figure>
+                    <div class="containerForImgOfDelivery">
+                        <div class="imgOfDelivery">
+                            <div class="back-containerForImgOfDelivery second">
+
+                            </div>
+                        </div>
+                    </div>
+                    <p>Наш оператор свяжеться с Вами чтобу уточнить детали заказа</p>
+                </figure>
+                <figure>
+                    <div class="containerForImgOfDelivery">
+                        <div class="imgOfDelivery">
+                            <div class="back-containerForImgOfDelivery third">
+
+                            </div>
+                        </div>
+                    </div>
+                    <p>Мы отправляем Ваш заказ через "Новую Почту"</p>
+                </figure>
+                <figure>
+                    <div class="containerForImgOfDelivery">
+                        <div class="imgOfDelivery">
+                            <div class="back-containerForImgOfDelivery fourth">
+
+                            </div>
+                        </div>
+                    </div>
+                    <p>Оплачиваете и забираете Ваш товар уже на месте</p>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="containerForImgOfBlockForTimer">
+            <div class="back-containerForImgOfBlockForTimer">
+                <div class="container">
+                    <div class="titleOfContents">
+                        <div class="back-containerForTitle">
+                            <h2>ВНИМАНИЕ!</h2>
+                        </div>
+                    </div>
+                    <div class="descriptionForTimer">
+                        <p class="onlyNow">Только сейчас мы проводим акцию, которая позволит<br> Вам приобрести данные модели по самой выгодной цене!</p>
+                        <div class="containerForPrice">
+                            <p class="oldPrice">4000грн.</p>
+                            <p class="newPrice">1990грн.</p>
+                        </div>
+                        <p class="endTimer">Осталось времени до конца акции:</p>
+                        <div class="time">
+                            <ul class="time">
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                                <li class="time-bg">2</li>
+                                <li class="time-bg">8</li>
+                            </ul>
+                        </div>
+                        <ul class="time-name">
+                            <li>дней</li>
+                            <li>часов</li>
+                            <li>минут</li>
+                            <li>секунд</li>
+                        </ul>
+                        <span>
+                        <a href="#exemplars">ВЫБРАТЬ МОДЕЛЬ</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews" id="reviews">
+        <div class="containerForReviews">
+            <div class="back-containerForReviews">
+                <div class="container">
+                    <div class="titleOfContents">
+                        <div class="back-containerForTitle">
+                            <h2>ОТЗЫВЫ</h2>
+                        </div>
+                    </div>
+                    <div class="textForReviews">
+                        <div id="carousel-example-generic" class="containerForTextOfReviews carousel slide" data-ride="carousel">
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="containerForBlockQuote">
+                                        <blockquote>LEVIS это по мне, но не всегда можно найти стоящую обувь, чтоб не сильно била по карману. Крутые ботинки, а под коричневый цвет мне подходит буквально весь гардероб. Их приятно трогать, а главное чувствуется запах хорошей качественной вещи. За ботинки смело ставлю 10 из 10.</blockquote>
+                                        <p>Иван</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="containerForBlockQuote">
+                                        <blockquote>Сделала зимний подарок мужу, он в восторге от ваших ботинок. Они очень приятные на ощупь, чувствуется высококачественный материал. Мех внутри весьма кстати, так как муж по работе часто находится на холоде.</blockquote>
+                                        <p>Алина</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="containerForBlockQuote">
+                                        <blockquote>Отдельное спасибо хочу сказать менеджеру. Милая девушка помогла мне подобрать размер, уверила в высоком качестве мокасинов, и не обманула. Думаю, они не уйдут на полку, пока не придут морозы. Отличнейший осенний вариант.</blockquote>
+                                        <p>Андрей</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="mdi mdi-keyboard-backspace right"></i></span>
+                                <span class="sr-only"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="mdi mdi-keyboard-backspace right mdi-rotate-180"></i></span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" >
+        <div class="container">
+            <div class="info">
+                <a>Политика конфиденциальности</a>
+                <p class="location">ООО "Эл-Трейд" г. Киев, ул. Сергея Струтинского, 13-15 ИНН: 7854479756; ОГРН: 1139747200753</p>
+                <p class="prava">Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/forHtml.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/countdown.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
